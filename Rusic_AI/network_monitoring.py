@@ -55,7 +55,7 @@ for epoch in range(num_epochs):
     if min_loss > loss:
         min_loss = loss
         # Сохранение модели
-        torch.save(model.state_dict(), "./model.pth")
+        torch.save(model.state_dict(), "model.pth")
 
     print('Epoch [{}/{}], Loss: {:.4f}'.format(epoch + 1, num_epochs, loss.item()))
 
