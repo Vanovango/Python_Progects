@@ -40,7 +40,7 @@ class Ui_MainWindow(object):
         _translate = QtCore.QCoreApplication.translate
         MainWindow.setWindowTitle(_translate("MainWindow", "MainWindow"))
         self.pushButton_exit.setText(_translate("MainWindow", "Выйти"))
-        self.pushButton_calculation.setText(_translate("MainWindow", "Расчитать"))
+        self.pushButton_calculation.setText(_translate("MainWindow", "Рассчитать"))
         self.label_2.setText(_translate("MainWindow", "Какие-то параметры"))
 
     def actions(self):
@@ -52,6 +52,7 @@ class Ui_MainWindow(object):
         import sys
         sys.exit()
 
+    @staticmethod
     def calculation(self):
         from result import Game
         game = Game()
