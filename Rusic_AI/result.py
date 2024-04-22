@@ -34,7 +34,7 @@ class Game:
         """
         drawing all objects and connections
         """
-        window = pg.display.set_mode((self.WIDTH, self.HIGH))
+        window = pg.display.set_mode((self.WIDTH, self.HIGH), pg.SCALED)
         clock = pg.time.Clock()
 
         window.fill(pg.Color('black'))
